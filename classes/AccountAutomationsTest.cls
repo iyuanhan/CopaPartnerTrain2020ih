@@ -14,7 +14,7 @@ private class AccountAutomationsTest {
     }
 
     @isTest static void testDefaultSite(){
-        Account acc = new Account(Name = 'My Test Account');
+        Account acc = new Account(Name = 'My Test Account-IH');
         insert acc;
         acc = AccountAutomations.setDefaultSite(acc);
         System.assertEquals('Single location', acc.Site, 'Default Site is Single location');
